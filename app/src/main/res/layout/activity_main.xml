@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.holmesk.cehua.activttys.MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F2F2F2"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="38dip"
+                android:orientation="horizontal">
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="1dp"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#0f0"
+                android:scaleType="matrix"
+                />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sc">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
